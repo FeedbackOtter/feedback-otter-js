@@ -11,8 +11,8 @@
     "graph": "npx nx graph",
     "create": "lerna create",
     "test": "lerna run test",
-    "version": "lerna version",
-    "publish": "lerna publish --no-private",
+    "f:version": "lerna version",
+    "f:publish": "lerna publish --no-private",
     "build": "lerna run build"
   }
 }
