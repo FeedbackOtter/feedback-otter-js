@@ -10,6 +10,6 @@ describe('Common render', () => {
 
   it('renders with core name', () => {
     const { getByText } = render(<MyCounter />)
-    expect(getByText('core: 0')).toBeInTheDocument()
+    expect(getByText('hello: 0')).toBeInTheDocument()
   })
 })

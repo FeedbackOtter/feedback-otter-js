@@ -2,10 +2,6 @@
 
 > TODO: description
 
-## Usage
+## Small example using the core package with JS
 
-```
-const exampleJs = require('example-js');
-
-// TODO: DEMONSTRATE API
-```
+Requires a build step in order to use the cjs package.
