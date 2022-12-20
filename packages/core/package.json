@@ -1,6 +1,6 @@
 {
   "name": "@feedback-otter/core",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "The open source feedback gathering toolchain for JS & TS applications.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
