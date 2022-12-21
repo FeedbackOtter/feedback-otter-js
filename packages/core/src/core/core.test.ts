@@ -1,13 +1,18 @@
 import { Core } from '../index'
-describe('s', () => {
-  it('should create a new core instance', () => {
-    const url = 'http://localhost:3000'
-    const core = new Core({
-      url,
-      requestType: 'REST',
-    })
+describe('Core Feedback package', () => {
+  it('should only need to create a core instance with a callback', async () => {
+    const fn = vi.fn()
+    const core = Core.fromCallback(fn)
 
-    expect(core.url).toBe(url)
-    expect(core.says()).toBe('hello')
+    await core.send()
+    expect(fn).toHaveBeenCalled()
+  })
+
+  it('should return from `send` whatever the callback returns', async () => {
+    const fn = (): string => 'hello'
+    const core = Core.fromCallback(fn)
+
+    const result = await core.send()
+    expect(result).toBe('hello')
   })
 })

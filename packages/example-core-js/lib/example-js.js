@@ -3,10 +3,9 @@
 module.exports = exampleJs;
 const { Core } = require("@feedback-otter/core");
 
-function exampleJs() {
-  const core = new Core({
-    url: "https://example.com",
-    requestType: "REST",
-  });
-  return `Hello from exampleJs. core says: ${core.says()}`;
+async function exampleJs() {
+  const helloFromCore = () => "core says: hello";
+  const core = new Core.fromCallback(helloFromCore);
+  const res = await core.send();
+  return `Hello from exampleJs. ${res}`;
 }

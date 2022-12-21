@@ -5,10 +5,7 @@ type Props = {
   value?: number
 }
 
-const core = new Core({
-  requestType: 'REST',
-  url: 'http://localhost:3000',
-})
+const core = Core.fromCallback(() => 'hello')
 export const MyCounter = ({ value = 0 }: Props) => {
   const [counter, setCounter] = useState(value)
 
@@ -23,7 +20,9 @@ export const MyCounter = ({ value = 0 }: Props) => {
   return (
     <div>
       <h1>
-        {core.says()}: {counter}
+        <>
+          {core.send()}: {counter}
+        </>
       </h1>
       <button onClick={onMinus}>-</button>
       <button onClick={onPlus}>+</button>
