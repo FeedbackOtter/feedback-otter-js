@@ -1,8 +1,8 @@
 {
-  "name": "example",
+  "name": "example-core-js",
   "private": true,
   "version": "0.0.0",
-  "description": "> TODO: description",
+  "description": "Example project just using the core library. Written in JS to make sure we can use this for regular JS projects.",
   "author": "Tyler Sustare <10850753+TylerSustare@users.noreply.github.com>",
   "homepage": "",
   "license": "ISC",

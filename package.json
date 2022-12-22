@@ -13,6 +13,7 @@
     "test": "lerna run test",
     "f:version": "lerna version",
     "f:publish": "lerna publish --no-private",
-    "build": "lerna run build"
+    "build": "lerna run build",
+    "dev": "npm run build && lerna run dev --parallel"
   }
 }
