@@ -13,6 +13,7 @@ describe('Core Feedback package', () => {
     const core = Core.fromCallback(fn)
 
     const result = await core.send()
+    expect(typeof result).toBe('string')
     expect(result).toBe('hello')
   })
 })

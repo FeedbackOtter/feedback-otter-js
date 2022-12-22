@@ -37,6 +37,8 @@ const client = new FeedbackClient({
 <FeedbackProvider client={feedbackClient}>{children}</FeedbackProvider>
 ```
 
+4. Optional - Cloudflare Turnstile or Google Recaptcha
+
 ## Examples
 
 See the examples folder for how to use the React components
