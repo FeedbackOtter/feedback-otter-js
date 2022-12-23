@@ -16,6 +16,6 @@
     "build": "lerna run build",
     "lint": "lerna run lint",
     "clean": "./scripts/clean.sh",
-    "dev": "npm run build && lerna run dev --parallel"
+    "dev": "lerna run dev"
   }
 }
