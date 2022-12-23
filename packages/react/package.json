@@ -1,6 +1,6 @@
 {
   "name": "@feedback-otter/react",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "The open source feedback gathering toolchain for React.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -68,7 +68,7 @@
     "react": ">=16"
   },
   "dependencies": {
-    "@feedback-otter/core": "^0.2.1",
+    "@feedback-otter/core": "^0.3.0",
     "styled-components": "^5.3.6"
   }
 }
