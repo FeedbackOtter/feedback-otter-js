@@ -1,0 +1,7 @@
+{
+  "include": ["."],
+  "compilerOptions": {
+    "lib": ["dom", "esnext"],
+    "types": ["vitest/globals"]
+  }
+}
