@@ -1,7 +1,7 @@
 import * as React from 'react'
-import { render } from '../test/utils'
+import { render } from './utils'
 
-import { MyCounter } from './App'
+import { MyCounter } from '../components/App'
 
 describe('Common render', () => {
   it('renders without crashing', () => {
