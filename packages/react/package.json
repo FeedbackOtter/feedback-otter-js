@@ -18,7 +18,9 @@
     "pub:dry": "npm run pub --dry-run",
     "test": "vitest --run",
     "test:watch": "vitest --run",
-    "test:cov": "vitest --coverage"
+    "test:cov": "vitest --coverage",
+    "storybook": "npm run build-storybook && start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -37,6 +39,14 @@
   },
   "homepage": "https://github.com/FeedbackOtter/feedback-otter-react#readme",
   "devDependencies": {
+    "@babel/core": "^7.20.7",
+    "@storybook/addon-actions": "^6.5.15",
+    "@storybook/addon-essentials": "^6.5.15",
+    "@storybook/addon-interactions": "^6.5.15",
+    "@storybook/addon-links": "^6.5.15",
+    "@storybook/builder-vite": "^0.2.6",
+    "@storybook/react": "^6.5.15",
+    "@storybook/testing-library": "^0.0.13",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
@@ -50,6 +60,7 @@
     "@vitejs/plugin-react": "^3.0.0",
     "@vitest/coverage-c8": "^0.25.8",
     "@vitest/ui": "^0.25.8",
+    "babel-loader": "^8.3.0",
     "eslint": "^8.29.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",

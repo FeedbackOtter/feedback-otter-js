@@ -21,12 +21,12 @@ const Button = styled.button`
   }
 `
 
-interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface FeedbackButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   modalMarkup?: ReactNode
   placement?: 'right' | 'left'
 }
 
-export const FeedbackButton: FC<Props> = ({ placement, children, ...rest }) => {
+export const FeedbackButton: FC<FeedbackButtonProps> = ({ placement, children, ...rest }) => {
   if (placement === 'right') {
     const RightButton = styled(Button)`
       position: fixed;
